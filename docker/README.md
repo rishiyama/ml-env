@@ -21,8 +21,8 @@
 
 ### オプション一覧
 
-- **`-i IMAGE_NAME`**: 使用するDockerイメージの名前を指定します。デフォルトは `"yaelvinker/clipasso_docker_updated"` です。
-- **`-n CONTAINER_NAME`**: 起動するコンテナの名前を指定します。デフォルトは `"clipsketch_container"` です。
+- **`-i IMAGE_NAME`**: 使用するDockerイメージの名前を指定します。デフォルトは `"my_image_name"` です。
+- **`-n CONTAINER_NAME`**: 起動するコンテナの名前を指定します。デフォルトは `"my_container"` です。
 - **`-p HOST_PORT`**: ホストの公開ポートを指定します。デフォルトは `8888` です。このポートはJupyter Notebookのアクセスに使用されます。
 - **`-j`**: Jupyter Notebookを起動する場合に指定します。このフラグを指定すると、コンテナ内でJupyter Notebookが起動します。
 
@@ -34,7 +34,7 @@
    ./run.sh
    ```
 
-   - コンテナ `clipsketch_container` がバックグラウンドで起動し、カレントディレクトリを `/workspace` としてマウントします。
+   - コンテナ `my_container` がバックグラウンドで起動し、カレントディレクトリを `/workspace` としてマウントします。
    - `tail -f /dev/null` を実行することで、コンテナが停止せずに維持されます。
 
 2. **Jupyter Notebook を起動する**:
